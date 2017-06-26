@@ -1,0 +1,5 @@
+CREATE DATABASE todelist;
+CREATE TABLE usuario(id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, nome VARCHAR(50) NOT NULL,senha VARCHAR(10) NOT NULL);
+INSERT INTO `usuario` (`id`, `nome`, `senha`) VALUES (NULL, 'adm', 'adm');
+CREATE TABLE IF NOT EXISTS tarefas (idtarefa INT NOT NULL PRIMARY KEY AUTO_INCREMENT, tarefa VARCHAR(20)NOT NULL, descricao VARCHAR(50), prioridade INT(2) NOT NULL, data_evento DATE, nome VARCHAR(20)NOT NULL,status BOOLEAN NOT NULL );
+
